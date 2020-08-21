@@ -1,21 +1,24 @@
 # JavaScript Practice
 
-This repository contains challenges to assess your coding and technical ability. We'll be checking over your solutions so please ensure you push to GitHub regularly. 
+This repository contains challenges to assess your coding and technical ability. We will be checking over your solutions, so please ensure you push to GitHub regularly. 
 
-You may find these exercises challenging but they give you the opportunity to showcase your growth mindset and commitment to programming and learning in general. You can always come to us if you are having any trouble.
+You may find these exercises challenging but they give you the opportunity to showcase your growth mindset and commitment to programming and learning in general. You can always come to us if you are having any trouble! 
 
 We will be covering Javascript on the Your Return to Tech course, so it's really important your problem solving skills are fresh. 
 
-If you need reminding of any key Javascript/programming concepts to solve these challenges we recommend the 'Codecademy: Learn Javascript' (free) course: https://www.codecademy.com/learn/introduction-to-javascript
+If you need reminding of any key Javascript concepts to solve these challenges we recommend the 'Codecademy: Learn Javascript' (free) course: https://www.codecademy.com/learn/introduction-to-javascript
 
 We also recommend this visual guide if you are unfamiliar with GitHub: https://agripongit.vincenttunru.com/
+
+Remember to break down problems to help you solve them and that Google is your friend!
 
 ### Instructions
 
 To complete these challenges you will need to have Node.js installed on your computer. Follow this link and click on the green button to install for Mac or Windows: https://nodejs.org/en/download/ 
-A download will start and when a pop-up appears please follow the installation instructions. 
 
-To check you have installed Node.js correctly, go to your terminal and write:
+A download will start. When a pop-up appears please follow the installation instructions. 
+
+To check you have installed Node.js correctly, go to your terminal and type:
 
     node --version
 
