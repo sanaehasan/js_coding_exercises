@@ -1,10 +1,27 @@
 # JavaScript Practice
 
-We'll be covering JavaScript on the first week of the course, and the come back to it in a few weeks. In the meantime, and throughout the course as a whole, it's really important that you continue to practice your core JavaScript programming skills even if we're focussing on different topics that week.
+This repository contains challenges to assess your coding and technical ability. We'll be checking over your solutions so please ensure you push to GitHub regularly. 
 
-This repository contains challenges to complete each week. We'll be checking over your solutions regularly and you can always come to us if you are having any trouble.
+You may find these exercises challenging but they give you the opportunity to showcase your growth mindset and commitment to programming and learning in general. You can always come to us if you are having any trouble.
+
+We will be covering Javascript on the Your Return to Tech course, so it's really important your problem solving skills are fresh. 
+
+If you need reminding of any key Javascript/programming concepts to solve these challenges we recommend the 'Codecademy: Learn Javascript' (free) course: https://www.codecademy.com/learn/introduction-to-javascript
+
+We also recommend this visual guide if you are unfamiliar with GitHub: https://agripongit.vincenttunru.com/
 
 ### Instructions
+
+To complete these challenges you will need to have Node.js installed on your computer. Follow this link and click on the green button to install for Mac or Windows: https://nodejs.org/en/download/ 
+A download will start and when a pop-up appears please follow the installation instructions. 
+
+To check you have installed Node.js correctly, go to your terminal and write:
+
+    node --version
+
+Your terminal should respond with the version of Node you have installed: 
+
+    v14.5.0
 
 [This getting started video](https://storage.googleapis.com/tech-returners-course/JavaScript_Challenges/intro_to_js_challenges.mp4) walks you through the below instructions for how to get started with this repository.
 
