@@ -1,6 +1,6 @@
 # Challenges
 
-This week's challenges focus on the following skills:
+This first set of challenges focus on the following skills:
 
 - Working with primitive data types (strings, numbers, booleans, null, undefined)
 - Operators

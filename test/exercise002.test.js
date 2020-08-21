@@ -4,7 +4,7 @@ const {
   getBusNumbers,
   countSheep,
   hasMPostCode
-} = require("../challenges/week2");
+} = require("../challenges/exercise002");
 
 describe("getFillings", () => {
   test("returns the fillings of a sandwich", () => {

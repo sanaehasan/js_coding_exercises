@@ -7,7 +7,7 @@ const {
   getSquareRoots,
   findSentencesContaining,
   getLongestSides
-} = require("../challenges/week4");
+} = require("../challenges/exercise004");
 
 describe("findSmallNums", () => {
   test("returns an array of numbers smaller than 1", () => {

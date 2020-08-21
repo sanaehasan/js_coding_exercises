@@ -9,7 +9,7 @@ const {
   countLinuxUsers,
   getMeanScore,
   simpleFizzBuzz
-} = require("../challenges/week1");
+} = require("../challenges/exercise001");
 
 describe("capitalize", () => {
   test("returns a capitalized string", () => {

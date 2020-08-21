@@ -6,7 +6,7 @@ const {
   arrShift,
   findNeedle,
   getWordFrequencies
-} = require("../challenges/week8");
+} = require("../challenges/exercise005");
 
 describe("findNextNumber", () => {
   test("returns the next number after the given number in the array", () => {

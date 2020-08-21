@@ -1,6 +1,6 @@
 # Challenges
 
-Once again, this week we'd like you to write your own unit tests.
+Once again, we'd like you to write your own unit tests.
 
 Remember, there is a video on Unit Testing available here:
 

@@ -4,7 +4,7 @@ const {
   getTotalSubjects,
   checkIngredients,
   duplicateNumbers
-} = require("../challenges/week3");
+} = require("../challenges/exercise003");
 
 describe("camelCaseWords", () => {
   test("camel cases a single word (i.e. no capital letter at beginning)", () => {
