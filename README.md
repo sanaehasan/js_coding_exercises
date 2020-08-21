@@ -19,58 +19,11 @@ To check you have installed Node.js correctly, go to your terminal and write:
 
     node --version
 
-Your terminal should respond with the version of Node you have installed: 
+Your terminal should respond with the version of Node you have installed. It will look something similar to the following (dont worry if its not the exact same version): 
 
     v14.5.0
 
 [This getting started video](https://storage.googleapis.com/tech-returners-course/JavaScript_Challenges/intro_to_js_challenges.mp4) walks you through the below instructions for how to get started with this repository.
-
-Fork this repository to your own Github account.
-
-Then clone the repository to your local machine:
-
-    git clone https://github.com/USERNAME/js_practice_march2020.git
-
-Change into the new directory
-
-    cd js_practice_march2020
-
-We will be adding more tasks to this repository as the weeks progress, so you'll need to pull in updates that _we_ make to this repository week by week. To do this, you need to link the original Tech Returners Github repository to your local repository on your machine.
-
-To do this, running the following command:
-
-    git remote add upstream https://github.com/techreturners/js_practice_march2020.git
-
-This means that there will be links established between:
-
-- Your local repository ---> Your repository on Github (called "origin")
-- Your local repository ---> Our repository on Github (called "upstream")
-
-#### Pulling in changes from upstream
-
-[This video](https://storage.googleapis.com/tech-returners-course/JavaScript_Challenges/getting_new_js_challenges.mp4) walks you through the below instructions for pulling in changes week by week.
-
-First add and commit any changes you have made (the below command requires you to have no local changes) and then run:
-
-    git pull upstream master
-
-If you cannot get to a straight edge to commit, you can temporarily "stash" your changes and then retrieve them when you have pulled from upstream. You would run:
-
-    git stash
-
-Followed by:
-
-    git pull upstream master
-
-And finally, to retrieve your stashed changes:
-
-    git stash pop
-
-### Pushing changes
-
-When you complete a challenge, push your commits up to Github so that we can follow your progress. To push to your remote repository:
-
-    git push origin master
 
 ### Completing the challenges
 
@@ -166,4 +119,4 @@ You should fix any errors before adding and commiting your code.
 
 # The challenges
 
-Open [The week1 challenge instructions](docs/week1.md) to get started!
+Open [the first challenge instructions](docs/exercise001.md) to get started!
