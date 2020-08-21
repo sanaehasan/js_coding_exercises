@@ -8,6 +8,8 @@ We will be covering Javascript on the Your Return to Tech course, so it's really
 
 If you need reminding of any key Javascript/programming concepts to solve these challenges we recommend the 'Codecademy: Learn Javascript' (free) course: https://www.codecademy.com/learn/introduction-to-javascript
 
+NOTE: You are not required to purchase any PRO content from CodeAcademy.
+
 We also recommend this visual guide if you are unfamiliar with GitHub: https://agripongit.vincenttunru.com/
 
 ### Instructions
