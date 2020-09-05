@@ -1,3 +1,5 @@
+const { RuleTester } = require("eslint");
+
 /**
  * This function will receive an array of numbers and should return the sum
  * of any numbers which are a multiple of 3 or 5
@@ -22,7 +24,6 @@ const isValidDNA = str => {
   if (str === undefined) throw new Error("str is required");
   var arr = str.split("");
   var result = false;
-  
   if(str.match(/A|T|G|C/g) && str.match(/A|T|G|C/g).length== arr.length ) result = true;
   return result;
 };
@@ -34,17 +35,15 @@ const isValidDNA = str => {
  */
 const getComplementaryDNA = str => {
   if (str === undefined) throw new Error("str is required");
-  var tab = str.match(/A|G|C|T/);
+  var tab = str.split("");
   var i =0;
  for (var i=0; i<tab.length ; i++){
-    if(tab[i]=='A') tab[i]='T';
-    if(tab[i]=='T') tab[i]='T';
-    if(tab[i]=='A') tab[i]='T';
-    if(tab[i]=='A') tab[i]='T';
-
-
+    if(tab[i]=='A') {tab[i]='T'; continue;}
+    if(tab[i]=='T'){ tab[i]='A'; continue;}
+    if(tab[i]=='C') {tab[i]='G'; continue;}
+    if(tab[i]=='G') {tab[i]='C'; continue;}
  }
-  
+ return tab.join("");  
 };
 
 /**
@@ -54,6 +53,13 @@ const getComplementaryDNA = str => {
  */
 const isItPrime = n => {
   if (n === undefined) throw new Error("n is required");
+  var isprime = true;
+  for(var i =2; i<n ;i++){
+    if(n%i==0){
+      isprime=false;
+    }
+  }
+  return isprime;
 };
 
 /**
@@ -70,6 +76,14 @@ const isItPrime = n => {
 const createMatrix = (n, fill) => {
   if (n === undefined) throw new Error("n is required");
   if (fill === undefined) throw new Error("fill is required");
+  var arr = [];
+  for (i=0;i<n ;i++){
+    var tab = new Array(n);
+    tab.fill(fill);
+    arr.push(tab);
+  }
+  return arr;
+  
 };
 
 /**
@@ -87,6 +101,13 @@ const createMatrix = (n, fill) => {
 const areWeCovered = (staff, day) => {
   if (staff === undefined) throw new Error("staff is required");
   if (day === undefined) throw new Error("day is required");
+  var covered = false;
+  var count =0;
+  staff.forEach(elt=>{
+  if( elt.rota.indexOf(day)>-1) count++;
+  })
+  if (count >=3) covered=true;
+  return covered;
 };
 
 module.exports = {
