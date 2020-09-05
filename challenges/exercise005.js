@@ -68,23 +68,14 @@ const getWordFrequencies = str => {
   // Your code here!
   str= str.replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g,"");
   str=str.toLowerCase();
-  var table = str.split(" ");
-  var result = {};
-  if(table && table.length){
-  for(var i =0; i<table.length ;i++){
-    if(table[i]!=''){
-    var tab =str.match(new RegExp(table[i], 'g') ||[]);
-    
-    console.log(tab);
-    result[table[i]]=tab.length;
-    str=str.replace(table[i],"").trim();
-    if(str.include(" ")){
-    table = str.split(" "); 
+  str=str.replace(/[ ]{2,}/gi," ");
+  var table =str.split(" ");
+  var result={};
+  table.forEach(element => {
+    if(!result[element]){
+      result[element]= str.split(element).length-1;
     }
-    }
-  }
-}
-
+  });
   return result;
 };
 
