@@ -4,6 +4,9 @@
  */
 const sumDigits = n => {
   if (n === undefined) throw new Error("n is required");
+  var tab = n.toString().split("");
+  var sum=tab.reduce((a, b) => parseInt(a) + parseInt(b), 0)
+   return sum;
 };
 
 /**
@@ -17,6 +20,15 @@ const sumDigits = n => {
 const createRange = (start, end, step) => {
   if (start === undefined) throw new Error("start is required");
   if (end === undefined) throw new Error("end is required");
+  if(step === undefined) step =1;
+
+  var result =[];
+
+  for(var i =start ; i<=end ; i+=step){
+    result.push(i);
+  }
+
+  return result;
 };
 
 /**
@@ -51,6 +63,19 @@ const createRange = (start, end, step) => {
 const getScreentimeAlertList = (users, date) => {
   if (users === undefined) throw new Error("users is required");
   if (date === undefined) throw new Error("date is required");
+  var wastedTime=[]
+  users.forEach(element => {
+    element.screenTime.forEach (elt=>{
+      
+      if(elt.date==date){
+        console.log(elt.usage);
+          if(Object.values(elt.usage).reduce((a, b) => a+b, 0)>=100){     
+            wastedTime.push(element.username);
+          }
+      }
+    })
+  });
+  return wastedTime;
 };
 
 /**
@@ -65,6 +90,11 @@ const getScreentimeAlertList = (users, date) => {
  */
 const hexToRGB = hexStr => {
   if (hexStr === undefined) throw new Error("hexStr is required");
+  hexstr =hexStr.replace("#","");
+  hexstr = hexstr.trim();
+  var tab = hexstr.match(/.{1,2}/g);
+  var rgb = [parseInt(tab[0],16),parseInt(tab[1],16),parseInt(tab[2],16)];
+  return rgb;
 };
 
 /**
@@ -79,6 +109,8 @@ const hexToRGB = hexStr => {
  */
 const findWinner = board => {
   if (board === undefined) throw new Error("board is required");
+ 
+ 
 };
 
 module.exports = {
