@@ -6,6 +6,11 @@
  */
 const sumMultiples = arr => {
   if (arr === undefined) throw new Error("arr is required");
+  var multiples=[];
+  arr.forEach(element => {
+    if(element%3==0 || element%5==0) multiples.push(element);
+  });
+  return multiples.reduce((a, b) => a + b, 0);
 };
 
 /**
@@ -15,6 +20,11 @@ const sumMultiples = arr => {
  */
 const isValidDNA = str => {
   if (str === undefined) throw new Error("str is required");
+  var arr = str.split("");
+  var result = false;
+  
+  if(str.match(/A|T|G|C/g) && str.match(/A|T|G|C/g).length== arr.length ) result = true;
+  return result;
 };
 
 /**
@@ -24,6 +34,17 @@ const isValidDNA = str => {
  */
 const getComplementaryDNA = str => {
   if (str === undefined) throw new Error("str is required");
+  var tab = str.match(/A|G|C|T/);
+  var i =0;
+ for (var i=0; i<tab.length ; i++){
+    if(tab[i]=='A') tab[i]='T';
+    if(tab[i]=='T') tab[i]='T';
+    if(tab[i]=='A') tab[i]='T';
+    if(tab[i]=='A') tab[i]='T';
+
+
+ }
+  
 };
 
 /**
