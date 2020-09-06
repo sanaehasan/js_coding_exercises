@@ -109,8 +109,39 @@ const hexToRGB = hexStr => {
  */
 const findWinner = board => {
   if (board === undefined) throw new Error("board is required");
- 
- 
+  var pos=[];
+  var pos1=[];
+  var pos2=[];
+  var winner="";
+
+  count =0;
+  
+  board.forEach(element => {
+   
+    pos.push(element.join(""));
+    pos1.push(element[count]);
+    pos2.push(element[board.length-count]);
+    count++;
+
+  });
+  pos.push(pos1.join(""));
+  pos.push(pos2.join(""));
+  for (let i = 0; i < board.length; i++) {
+    var elm=[]
+  for (let j = 0; j < board.length; j++) {
+      elm.push(board[j][i])
+    
+  }
+  pos.push(elm.join(""));
+
+  elm=[];
+  }
+  pos.forEach(element => {
+   
+    if(element.match(/X/g) && element.match(/X/g).length==3){winner="X"}
+    if(element.match(/0/g) && element.match(/0/g).length==3){winner="0"}
+  });
+ return winner;
 };
 
 module.exports = {
